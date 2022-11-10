@@ -42,6 +42,7 @@
             {% else %}    
         {% endcase %}
     {% endfor %}
+    {% render 'pagination', pagination: paginate %}
 </article>
 
 {% if blog.comments_enabled? %}
